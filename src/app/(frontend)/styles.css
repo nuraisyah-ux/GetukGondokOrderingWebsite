@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #fffdf8;
+  }
+
+  button,
+  a {
+    transition:
+      color 160ms ease,
+      background-color 160ms ease,
+      border-color 160ms ease,
+      transform 160ms ease;
+  }
+
+  label {
+    display: grid;
+    gap: 0.5rem;
+    color: #4d564f;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    border: 1px solid #ded6ca;
+    border-radius: 0.75rem;
+    background: #fff;
+    padding: 0.8rem 0.9rem;
+    color: #28372f;
+    outline: none;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #4d8067;
+    box-shadow: 0 0 0 3px rgba(77, 128, 103, 0.12);
+  }
+}
+
+@layer components {
+  .eyebrow {
+    color: #a55335;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    margin-top: 0.55rem;
+    color: #173d30;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    line-height: 1.08;
+  }
+
+  .page-title {
+    margin-top: 0.6rem;
+    color: #173d30;
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.7rem, 6vw, 4.6rem);
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+  }
+
+  .form-card {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    border: 1px solid #e2dacc;
+    border-radius: 1.5rem;
+    background: #fff;
+    padding: 1.5rem;
+  }
+
+  .step {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    place-items: center;
+    border-radius: 999px;
+    background: #265c47;
+    color: white;
+    font-weight: 800;
+  }
+
+  .form-title {
+    color: #173d30;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+  }
+
+  .payment-note {
+    display: grid;
+    gap: 0.3rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: #f6f3ec;
+    padding: 1rem;
+    color: #536059;
+    font-size: 0.875rem;
+  }
+
+  .status {
+    border-radius: 999px;
+    background: #edf3ea;
+    padding: 0.35rem 0.65rem;
+    color: #35634e;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+}
+
+.figma-custom-code-fragment {
+  display: contents;
+}
+
+.figma-bypass-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2147483647;
+  transform: translateY(-150%);
+  border-radius: 6px;
+  background: #111827;
+  color: #fff;
+  padding: 8px 12px;
+  font:
+    600 14px/1.2 system-ui,
+    sans-serif;
+  text-decoration: none;
+}
+
+.figma-bypass-link:focus {
+  transform: translateY(0);
+}
