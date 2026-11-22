@@ -1,5 +1,5 @@
-import AppExperience from './components/AppExperience'
+import AppRouter from './components/AppRouter'
 
 export default function HomePage() {
-  return <AppExperience />
+  return <AppRouter />
 }
